@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Digital X</title>
+    <meta name="description" content="Manage your Digital X profile, view your progress, and update your account settings.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <div class="logo-cube"></div>
+                </div>
+                <span class="logo-text">Digital X</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="affiliate.html" class="nav-link">Affiliate</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="auth-links" id="auth-links">
+                    <a href="login.html" class="nav-link auth-link" id="login-link">Login</a>
+                    <a href="signup.html" class="nav-link auth-link" id="signup-link">Sign Up</a>
+                </div>
+                <div class="profile-menu" id="profile-menu" style="display: none;">
+                    <div class="profile-dropdown">
+                        <button class="profile-btn" id="profile-btn">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span class="profile-name" id="profile-name">User</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="profile-dropdown-menu" id="profile-dropdown-menu">
+                            <a href="profile.html" class="dropdown-item active">
+                                <i class="fas fa-user"></i>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Dashboard</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <button class="dropdown-item logout-btn" id="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <main class="profile-main">
+        <section class="profile-section">
+            <div class="section-background">
+                <div class="floating-elements">
+                    <div class="floating-shape fs-1"></div>
+                    <div class="floating-shape fs-2"></div>
+                    <div class="floating-shape fs-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="profile-header">
+                    <div class="profile-avatar-large">
+                        <i class="fas fa-user"></i>
+                        <button class="avatar-edit-btn">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-title" id="profile-display-name">John Doe</h1>
+                        <p class="profile-email" id="profile-display-email">john.doe@example.com</p>
+                        <div class="profile-badges">
+                            <span class="badge badge-premium">Premium Member</span>
+                            <span class="badge badge-verified">Verified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-sidebar">
+                        <div class="sidebar-menu">
+                            <button class="sidebar-item active" data-tab="overview">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>Overview</span>
+                            </button>
+                            <button class="sidebar-item" data-tab="personal">
+                                <i class="fas fa-user-edit"></i>
+                                <span>Personal Info</span>
+                            </button>
+                            <button class="sidebar-item" data-tab="security">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security</span>
+                            </button>
+                            <button class="sidebar-item" data-tab="purchases">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>Purchases</span>
+                            </button>
+                            <button class="sidebar-item" data-tab="affiliate">
+                                <i class="fas fa-handshake"></i>
+                                <span>Affiliate</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="profile-main-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-content active" id="overview-tab">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-download"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <h3>12</h3>
+                                        <p>Resources Downloaded</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <h3>$245.50</h3>
+                                        <p>Affiliate Earnings</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <h3>18</h3>
+                                        <p>Referrals</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recent-activity">
+                                <h3>Recent Activity</h3>
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-download"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            <p><strong>Downloaded</strong> Web Development Guide</p>
+                                            <span class="activity-time">2 hours ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            <p><strong>Referred</strong> a new user</p>
+                                            <span class="activity-time">1 day ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            <p><strong>Rated</strong> Mobile App Development Mastery</p>
+                                            <span class="activity-time">3 days ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Personal Info Tab -->
+                        <div class="tab-content" id="personal-tab">
+                            <form class="profile-form" id="personal-info-form">
+                                <div class="form-section">
+                                    <h3>Personal Information</h3>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="first-name">First Name</label>
+                                            <input type="text" id="first-name" name="firstName" value="John">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last-name">Last Name</label>
+                                            <input type="text" id="last-name" name="lastName" value="Doe">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profile-email">Email Address</label>
+                                        <input type="email" id="profile-email" name="email" value="john.doe@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" value="+1 (555) 123-4567">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bio">Bio</label>
+                                        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself...">Digital enthusiast and entrepreneur passionate about technology and innovation.</textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </form>
+                        </div>
+
+                        <!-- Security Tab -->
+                        <div class="tab-content" id="security-tab">
+                            <div class="security-section">
+                                <h3>Change Password</h3>
+                                <form class="profile-form" id="password-form">
+                                    <div class="form-group">
+                                        <label for="current-password">Current Password</label>
+                                        <input type="password" id="current-password" name="currentPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new-password">New Password</label>
+                                        <input type="password" id="new-password" name="newPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm-password">Confirm New Password</label>
+                                        <input type="password" id="confirm-password" name="confirmPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Update Password</button>
+                                </form>
+                            </div>
+
+                            <div class="security-section">
+                                <h3>Two-Factor Authentication</h3>
+                                <div class="security-option">
+                                    <div class="security-info">
+                                        <h4>SMS Authentication</h4>
+                                        <p>Receive verification codes via SMS</p>
+                                    </div>
+                                    <button class="btn btn-outline">Enable</button>
+                                </div>
+                                <div class="security-option">
+                                    <div class="security-info">
+                                        <h4>Authenticator App</h4>
+                                        <p>Use an authenticator app for verification</p>
+                                    </div>
+                                    <button class="btn btn-outline">Setup</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Purchases Tab -->
+                        <div class="tab-content" id="purchases-tab">
+                            <div class="purchases-list">
+                                <h3>Your Purchases</h3>
+                                <div class="purchase-item">
+                                    <div class="purchase-info">
+                                        <h4>Complete Web Development Guide</h4>
+                                        <p>Purchased on March 15, 2024</p>
+                                    </div>
+                                    <div class="purchase-actions">
+                                        <span class="purchase-price">$29.99</span>
+                                        <button class="btn btn-outline btn-sm">Download</button>
+                                    </div>
+                                </div>
+                                <div class="purchase-item">
+                                    <div class="purchase-info">
+                                        <h4>Mobile App Development Mastery</h4>
+                                        <p>Purchased on March 10, 2024</p>
+                                    </div>
+                                    <div class="purchase-actions">
+                                        <span class="purchase-price">$39.99</span>
+                                        <button class="btn btn-outline btn-sm">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Affiliate Tab -->
+                        <div class="tab-content" id="affiliate-tab">
+                            <div class="affiliate-dashboard">
+                                <h3>Affiliate Dashboard</h3>
+                                <div class="affiliate-stats">
+                                    <div class="affiliate-stat">
+                                        <h4>Total Earnings</h4>
+                                        <p class="stat-value">$245.50</p>
+                                    </div>
+                                    <div class="affiliate-stat">
+                                        <h4>This Month</h4>
+                                        <p class="stat-value">$89.25</p>
+                                    </div>
+                                    <div class="affiliate-stat">
+                                        <h4>Referrals</h4>
+                                        <p class="stat-value">18</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="affiliate-links">
+                                    <h4>Your Affiliate Link</h4>
+                                    <div class="link-input-group">
+                                        <input type="text" value="https://digitalx.com/ref/johndoe123" readonly>
+                                        <button class="btn btn-outline" onclick="copyToClipboard(this.previousElementSibling.value)">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-cube"></div>
+                    </div>
+                    <span class="logo-text">Digital X</span>
+                </div>
+                <p>&copy; 2024 Digital X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

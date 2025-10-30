@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us - Digital X</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "8YvdKCzURqn_Ba2Po",
+      });
+   })();
+</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <div class="logo-cube"></div>
+                </div>
+                <span class="logo-text">Digital X</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="affiliate.html" class="nav-link">Affiliate</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section page-section">
+        <div class="section-background">
+            <div class="floating-elements">
+                <div class="floating-shape fs-8"></div>
+                <div class="floating-shape fs-9"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Ready to transform your digital presence? Let's talk!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>digitalx.journey@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 9065 225 443</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="sendmail()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-cube"></div>
+                    </div>
+                    <span class="logo-text">Digital X</span>
+                </div>
+                <p>&copy; 2025 Digital X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Correct EmailJS Script -->
+    <script>
+        // // Initialize EmailJS with your real User ID
+        // emailjs.init("8YvdKCzURqn_Ba2Po"); 
+
+        // // Select the form
+        // const contactForm = document.getElementById("contact-form");
+
+        // // Add event listener for form submission
+        // contactForm.addEventListener("submit", function(event) {
+        //     event.preventDefault();
+
+        //     emailjs.sendForm('service_ogynpxg', 'template_ywaa228', this)
+        //     .then(function(response) {
+        //         console.log('SUCCESS!', response.status, response.text);
+        //         alert('Message sent successfully!');
+        //         contactForm.reset();
+        //     }, function(error) {
+        //         console.log('FAILED...', error);
+        //         alert('Failed to send message. Please try again.');
+        //     });
+        // });
+        function sendmail(){
+            let params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            };
+            emailjs.send("service_ogynpxg","template_ywaa228",params).then(function (res){
+                alert("success"+res.status);
+            })
+        }
+    </script>
+
+</body>
+</html>

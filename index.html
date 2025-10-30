@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Added comprehensive SEO meta tags -->
+    <title>Digital X - Transform Your Digital Journey | Expert Digital Solutions</title>
+    <meta name="description" content="Transform your digital presence with Digital X. Expert web development, mobile apps, digital marketing, and cloud solutions. Get started free today!">
+    <meta name="keywords" content="digital transformation, web development, mobile apps, digital marketing, cloud solutions, affiliate program, digital resources">
+    <meta name="author" content="Digital X">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://digitalx.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digitalx.com/">
+    <meta property="og:title" content="Digital X - Transform Your Digital Journey">
+    <meta property="og:description" content="Expert digital solutions including web development, mobile apps, and digital marketing. Join 10,000+ satisfied users.">
+    <meta property="og:image" content="https://digitalx.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Digital X">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digitalx.com/">
+    <meta property="twitter:title" content="Digital X - Transform Your Digital Journey">
+    <meta property="twitter:description" content="Expert digital solutions including web development, mobile apps, and digital marketing. Join 10,000+ satisfied users.">
+    <meta property="twitter:image" content="https://digitalx.com/images/twitter-image.jpg">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Digital X",
+      "url": "https://digitalx.com",
+      "logo": "https://digitalx.com/images/logo.png",
+      "description": "Expert digital solutions including web development, mobile apps, digital marketing, and cloud solutions.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service",
+        "email": "hello@digitalx.com"
+      },
+      "sameAs": [
+        "https://twitter.com/digitalx",
+        "https://linkedin.com/company/digitalx",
+        "https://facebook.com/digitalx"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "Digital transformation services and resources",
+        "category": "Digital Services"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <div class="logo-cube"></div>
+                </div>
+                <span class="logo-text">Digital X</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="affiliate.html" class="nav-link">Affiliate</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <!-- Added authentication and profile links -->
+                <div class="auth-links" id="auth-links">
+                    <a href="login.html" class="nav-link auth-link" id="login-link">Login</a>
+                    <a href="signup.html" class="nav-link auth-link" id="signup-link">Sign Up</a>
+                </div>
+                <div class="profile-menu" id="profile-menu" style="display: none;">
+                    <div class="profile-dropdown">
+                        <button class="profile-btn" id="profile-btn">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span class="profile-name" id="profile-name">User</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="profile-dropdown-menu" id="profile-dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fas fa-user"></i>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Dashboard</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <button class="dropdown-item logout-btn" id="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero-section" role="banner">
+            <div class="hero-background">
+                <div class="particles-container" id="particles" aria-hidden="true"></div>
+                <div class="floating-shapes" aria-hidden="true">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <!-- Added star structure beside hero content -->
+                    <div class="star-structure" aria-hidden="true">
+                        <div class="star-element star-1"></div>
+                        <div class="star-element star-2"></div>
+                        <div class="star-element star-3"></div>
+                        <div class="star-element star-4"></div>
+                        <div class="star-element star-5"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <!-- Removed rating badge section -->
+                
+                <h1 class="hero-title">
+                    Transform Your <span class="gradient-text">Digital Journey</span> with Expert Tools & Resources
+                </h1>
+                
+                <p class="hero-description">
+                    Unlock the power of digital transformation with our comprehensive suite of tools, e-books, and affiliate programs designed to accelerate your success.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-tooltip="Start your free trial today">
+                        <span>Get Started Free</span>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                    <button class="btn btn-secondary" data-tooltip="Watch our product demo">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                        <span>Watch Demo</span>
+                    </button>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fast Setup</h3>
+                            <p>Get started in minutes</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Secure Platform</h3>
+                            <p>Enterprise-grade security</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>24/7 Support</h3>
+                            <p>Always here to help</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-background">
+                <div class="floating-elements" aria-hidden="true">
+                    <div class="floating-shape fs-1"></div>
+                    <div class="floating-shape fs-2"></div>
+                    <div class="floating-shape fs-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-description">Comprehensive digital solutions tailored to your needs</p>
+                </header>
+                
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom websites and web applications built with modern technologies</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Responsive Design</span>
+                            <span class="feature-tag">SEO Optimized</span>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Apps</h3>
+                        <p>Native and cross-platform mobile applications for iOS and Android</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Cross-Platform</span>
+                            <span class="feature-tag">Native Performance</span>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>Strategic marketing solutions to grow your online presence</p>
+                        <div class="service-features">
+                            <span class="feature-tag">SEO/SEM</span>
+                            <span class="feature-tag">Social Media</span>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure and deployment solutions</p>
+                        <div class="service-features">
+                            <span class="feature-tag">AWS/Azure</span>
+                            <span class="feature-tag">Auto-Scaling</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section">
+            <div class="section-background">
+                <div class="floating-elements">
+                    <div class="floating-shape fs-4"></div>
+                    <div class="floating-shape fs-5"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Digital Resources</h2>
+                    <p class="section-description">Premium e-books and guides to accelerate your learning</p>
+                </div>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Complete Web Development Guide</h3>
+                            <p>Master modern web development from basics to advanced concepts</p>
+                            <div class="resource-meta">
+                                <span class="price">$29.99</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                            </div>
+                            <button class="btn btn-outline">Download Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Mobile App Development Mastery</h3>
+                            <p>Build stunning mobile apps for iOS and Android platforms</p>
+                            <div class="resource-meta">
+                                <span class="price">$39.99</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.8
+                                </span>
+                            </div>
+                            <button class="btn btn-outline">Download Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Digital Marketing Strategies</h3>
+                            <p>Proven strategies to grow your business online</p>
+                            <div class="resource-meta">
+                                <span class="price">$24.99</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    4.7
+                                </span>
+                            </div>
+                            <button class="btn btn-outline">Download Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Affiliate Section -->
+        <section id="affiliate" class="affiliate-section">
+            <div class="section-background">
+                <div class="floating-elements">
+                    <div class="floating-shape fs-6"></div>
+                    <div class="floating-shape fs-7"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Affiliate Program</h2>
+                    <p class="section-description">Join our affiliate program and earn generous commissions</p>
+                </div>
+                
+                <div class="affiliate-content">
+                    <div class="affiliate-benefits">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h3>High Commissions</h3>
+                            <p>Earn up to 50% commission on every sale you refer</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Real-time Analytics</h3>
+                            <p>Track your performance with detailed analytics dashboard</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Marketing Tools</h3>
+                            <p>Access to banners, links, and promotional materials</p>
+                        </div>
+                    </div>
+                    
+                    <div class="affiliate-cta">
+                        <h3>Ready to Start Earning?</h3>
+                        <p>Join thousands of successful affiliates and start earning today</p>
+                        <button class="btn btn-primary">Join Affiliate Program</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-background">
+                <div class="floating-elements">
+                    <div class="floating-shape fs-8"></div>
+                    <div class="floating-shape fs-9"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-description">Ready to transform your digital presence? Let's talk!</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>hello@digitalx.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>123 Digital Street, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <div class="logo-cube"></div>
+                    </div>
+                    <span class="logo-text">Digital X</span>
+                </div>
+                <p>&copy; 2024 Digital X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

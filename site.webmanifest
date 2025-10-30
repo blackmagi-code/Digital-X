@@ -1,0 +1,23 @@
+{
+    "name": "Digital X - Digital Transformation Solutions",
+    "short_name": "Digital X",
+    "description": "Transform your digital presence with expert web development, mobile apps, and digital marketing solutions.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#10b981",
+    "background_color": "#0f172a",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "portrait-primary"
+}
